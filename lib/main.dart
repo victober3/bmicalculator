@@ -24,12 +24,11 @@ class BMICalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //theme: ThemeData(
+        Color c = const Color(#0A0D22),
+     // ),
      home: InputPage(),
-
-
-
     );
-
   }
 }
 class InputPage extends StatelessWidget {
@@ -65,8 +64,6 @@ class InputPage extends StatelessWidget {
           ),
           ),
 
-
-
           Expanded(child: Container(
               margin: EdgeInsets.all(15.0),
               decoration: BoxDecoration(
@@ -74,7 +71,6 @@ class InputPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0),
               ),
           ),
-
       ),
 
           Expanded(child: Row(
@@ -98,18 +94,9 @@ class InputPage extends StatelessWidget {
             ],
           ),
           ),
-
-
-
         ],
-
-
         ),
-
         );
-
-
-
   }
 }
 
