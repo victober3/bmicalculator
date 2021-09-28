@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/foundation.dart';
+//class InputPage extends StatelessWidget {
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Center(child: Text('BMI CALCULATOR')),
+//       ),
+//
+//
+//     );
+//   }
+// }
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,5 +32,31 @@ class BMICalculator extends StatelessWidget {
 
   }
 }
+class InputPage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text('BMI CALCULATOR'),
+        ),
+      ),
+      body: Container(
+
+        margin: EdgeInsets.all(15.0),
+        decoration: BoxDecoration(
+          color: Color(0xFF1D1E33),
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+
+        ),
+
+        );
+
+
+
+  }
+}
+
 
 

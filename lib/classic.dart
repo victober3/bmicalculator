@@ -7,16 +7,10 @@ class InputPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('BMI CALCULATOR'),
-        ),
+        title: Center(child: Text('BMI CALCULATOR')),
       ),
-      body: Container(
-        color: Colors.black38,
-
-        ),
-      );
 
 
-
+    );
   }
 }
