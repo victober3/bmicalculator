@@ -6,11 +6,15 @@ void main() {
 }
 
 class BMICalculator extends StatelessWidget {
+  get primaryColorDark => null;
+
   // const bmi_calculator({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColorDark: Color(0xFF0A0D22)
+      theme: ThemeData(
+
+         // primaryColorDark//: Color(0xFF0A0D22)
           // primaryColor: Color(0xFF0A0D22),
 
           ),
