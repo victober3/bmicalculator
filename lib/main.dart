@@ -75,16 +75,14 @@ class InputPage extends StatelessWidget {
 }
 
 class Reuseable extends StatelessWidget {
-  const Reuseable({
-    Key? key,
-  }) : super(key: key);
-
+   Reuseable(@required this.colour);
+   Color colour;
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: Color(0xFF1D1E33),
+        color: colour,
         borderRadius: BorderRadius.circular(10.0),
       ),
     );
