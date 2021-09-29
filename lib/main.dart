@@ -30,12 +30,12 @@ class InputPage extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Reuseable(
-                    colour: Color(0xFF1D1E33),
+
                   ),
                 ),
                 Expanded(
                   child: Reuseable(
-                    colour: Color(0xFF1D1E33),
+
                   ),
                 ),
               ],
@@ -43,7 +43,7 @@ class InputPage extends StatelessWidget {
           ),
           Expanded(
             child: Reuseable(
-              colour: Color(0xFF1D1E33),
+
             ),
           ),
           Expanded(
@@ -51,12 +51,12 @@ class InputPage extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Reuseable(
-                    colour: Color(0xFF1D1E33),
+
                   ),
                 ),
                 Expanded(
                   child: Reuseable(
-                    colour: Color(0xFF1D1E33),
+
                   ),
                 ),
               ],
@@ -69,7 +69,7 @@ class InputPage extends StatelessWidget {
 }
 class Reuseable extends StatelessWidget {
 
-  Reuseable({@required this.colour});
+  Reuseable({this.color});
   Color colour;
 
   @override
@@ -77,7 +77,7 @@ class Reuseable extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: Color(0xFF1D1E33),
+        color: colour,
         borderRadius: BorderRadius.circular(10.0),
       ),
     );
