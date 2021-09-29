@@ -1,26 +1,11 @@
 import 'package:flutter/material.dart';
-//class InputPage extends StatelessWidget {
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Center(child: Text('BMI CALCULATOR')),
-//       ),
-//
-//
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(BMICalculator());
 }
-
 class BMICalculator extends StatelessWidget {
   // const bmi_calculator({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,7 +14,6 @@ class BMICalculator extends StatelessWidget {
     );
   }
 }
-
 class InputPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -45,25 +29,35 @@ class InputPage extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Reuseable(),
+                  child: Reuseable(
+                    colour: Color(0xFF1D1E33),
+                  ),
                 ),
                 Expanded(
-                  child: Reuseable(),
+                  child: Reuseable(
+                    colour: Color(0xFF1D1E33),
+                  ),
                 ),
               ],
             ),
           ),
           Expanded(
-            child: Reuseable(),
+            child: Reuseable(
+              colour: Color(0xFF1D1E33),
+            ),
           ),
           Expanded(
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Reuseable(),
+                  child: Reuseable(
+                    colour: Color(0xFF1D1E33),
+                  ),
                 ),
                 Expanded(
-                  child: Reuseable(),
+                  child: Reuseable(
+                    colour: Color(0xFF1D1E33),
+                  ),
                 ),
               ],
             ),
@@ -73,16 +67,17 @@ class InputPage extends StatelessWidget {
     );
   }
 }
-
 class Reuseable extends StatelessWidget {
-   Reuseable(@required this.colour);
-   Color colour;
+
+  Reuseable({@required this.colour});
+  Color colour;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: colour,
+        color: Color(0xFF1D1E33),
         borderRadius: BorderRadius.circular(10.0),
       ),
     );
