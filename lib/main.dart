@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
+//import 'package:flutter/material.dart';
 
 void main() {
   runApp(BMICalculator());
 }
+
 class BMICalculator extends StatelessWidget {
   // const bmi_calculator({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData(primaryColorDark: Color(0xFF0A0D22)
+          // primaryColor: Color(0xFF0A0D22),
+
+          ),
       home: InputPage(),
     );
   }
 }
+
 class InputPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -62,14 +67,17 @@ class InputPage extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+
+          ),
         ],
       ),
     );
   }
 }
-class Reuseable extends StatelessWidget {
 
-  Reuseable({@required this.colour});
+class Reuseable extends StatelessWidget {
+  Reuseable({required this.colour});
   Color colour;
 
   @override
